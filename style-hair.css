@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+    /*background-color: aqua;*/
+    box-sizing: border-box;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+.logo{
+    position: fixed;
+    float: left;
+    margin: 8px 36px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    width: 110px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    
+}
+    nav ul{
+        list-style: none;
+        background: #424c59ce;
+        overflow: hidden;
+        color: white;
+        padding: 0;
+        text-align: right;
+        margin: 0;
+        transition: 1s;
+
+        
+    }
+        nav.overlay ul{
+            background: #424C59;
+        }
+
+        nav ul li{
+            display: inline-block;
+            margin: 0 50px; 
+            padding: 20px;
+            
+        }
+
+            nav ul li a{
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+
+            /*-----------------------------------------Underline Hover START----------------*/
+
+                
+                .underline::after{
+                    content: '';
+                    display: block;
+                    height: 3px;
+                    width: 0px;
+                    background: white;
+                    transition: width 0.5s;
+                }
+
+                .underline:hover::after{
+                    width: 100%;
+                    transition: width 0.5s;
+                }
+
+               
+
+           /*-----------------------------------------Underline Hover END----------------*/
+
+.hair-background1{
+    position: relative;
+}
+.hair-background1 img{
+    display: block;
+    width:100%;
+    position: relative;
+}
+.hair-background1 h1{
+    text-align: center;
+    font-size: 100px;
+    color: rgb(68, 65, 63);
+    margin-top: 10%;
+}
+.hair-background1 p{
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    transform: translateY(-1730%);
+    margin-left: 3%;
+    word-spacing: 310px;
+    
+}
+.hair-icon{
+    transform:translateY(-670%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-size: auto 1.5em;
+}
+.hair-icon a{
+    text-align: center;
+    font-size: 150px;
+    color: white;
+    margin: 10%;
+    
+}
+
+/*------------------------------Menubar END-------------------------*/
+#hair-services{
+    background:white;
+}
+
+.hair-service-box{
+    width: 100%;
+    height: 20vh;
+    background: rgba(217, 139, 132, 0.8);
+    position: relative; 
+    margin-top: 5%;
+}
+
+.hair-service-box h3{
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: white;
+    transform: translateY(0%);
+}
+
+
+.hair-services-container{                  /*services box*/
+    width: 1400px;
+    min-height: 600px;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transform: translateY(-25%);
+}
+    .hair-details{
+        text-align: center;
+        font-size: 30px;
+    }
+    .hair-detailsLR{
+        justify-content: center;
+        font-size: 30px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        transform: translateY(-20%);
+    }
+    .hair-detailsL {
+        text-align: left;
+        margin-left: 5%;   
+        
+    } 
+    .hair-detailsR{
+        text-align: right;
+        margin-left: 30%; 
+        margin-right: 5%;  
+      
+    } 
+
+    .hair-services-container .hair-service-box{
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background: blue;
+        margin: 100px;
+        box-sizing: border-box;
+        display: inline-block;
+
+    }
+
+    .hair-services-container .hair-service-box .imgBox{
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hair-services-container .hair-service-box .imgBox img{
+        max-width: 100%;
+        transition: transform 2s;
+    }
+
+    .hair-services-container .hair-service-box:hover .imgBox img{
+        transform: scale(1.1);
+    }
+    
+    
+    .hair-services-container .hair-service-box .hair-details{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        bottom: 10px;
+        right: 10px;
+        background: rgba(0,0,0,0.8);
+        transform: scaleY(0);
+        transition: transform 0.5s;
+    }
+
+        .hair-services-container .hair-service-box:hover .hair-details{
+            transform: scaleY(1);
+        }
+
+    .hair-services-container .hair-service-box .details .hair-content{
+        position: absolute;
+        text-align: center;
+        left: 25%;
+        top: 15%;
+        color: white;
+        
+    }
+
+        .hair-services-container .hair-box .details .hair-content h3{
+            font-size: 35px;
+            margin: 0;
+            padding: 0;
+            color: #d98b84;
+        }
+
+            .hair-services-container .hair-box .details .hair-content p{
+                font-size: 20px;
+            }
+
+/*---------------------------------------------------------------- CAROUSEL START---------------------------------------*/
+
+.hi-slide{
+        position: relative;
+        width: 754px;
+        height: 292px;
+        border-radius: 50px;
+        margin: 115px auto 0;
+        transform:translateY(-50%);
+    }
+
+        .hi-slide .hi-next, 
+        .hi-slide .hi-prev{
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            margin-top: -20px;
+            border-radius: 50px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            transition: all 0.8s;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+            .hi-slide .hi-next:hover, 
+            .hi-slide .hi-prev:hover{
+                opacity: 1;
+                background-color: gray;
+            }
+
+            .hi-slide .hi-prev {
+                left: -100px;
+            }
+
+                .hi-slide .hi-prev::before{
+                    content: '<';
+                }
+
+            .hi-slide .hi-next {
+                right: -100px;
+            }
+
+                .hi-slide .hi-next::before{
+                    content: '>';
+                }
+
+            .hi-slide > ul{
+                list-style: none;
+                position: relative;
+                width: 754px;
+                height: 292px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .hi-slide > ul > li{
+                overflow: hidden;
+                position: absolute;
+                z-index: 2;
+                left: 377px;
+                top: 147px;
+                margin: 0;
+                padding: 0;
+                border: 3px solid rgb(68, 65, 63);
+                cursor: pointer;
+                background-color: gray;
+            }
+
+            .hi-slide > ul > li > img{
+                width: 100%;
+                height: 100%;
+                background-position: center;
+            }
+
+/*---------------------------------------------------------------- CAROUSEL END---------------------------------------*/
+
+/*---------------------------------------------------------------- CAROUSEL END---------------------------------------*/
+
+
+
+/*-------------------------- APPOINTMENT START-------------------------*/
+.appointment-body {
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+    }
+    .form-container{
+        background-color: #fafafa;
+        margin: 200px;
+        box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+
+    .container-time {
+        background-color: rgba(0, 0, 0, .95);
+        padding: 50px;
+        outline: 3px dashed #d98b84;
+        outline-offset: -30px;
+        text-align: center;
+        }
+        
+        .heading {
+            font-size: 35px;
+            text-transform: uppercase;
+            }
+            
+            .heading-days {
+            color:#d98b84;
+            font-size: 30px;
+            
+            }
+            
+            .heading-phone {
+            font-size: 20px;
+            }
+
+        .container-form {
+            padding: 20px 0;
+            margin: 0 auto;
+            color: #000;
+            }
+
+        form {
+            display: grid;
+            grid-row-gap: 20px;
+            }
+            form p {
+            font-weight: 600;
+            }
+            .form-field {
+            display: flex;
+            justify-content: space-between;
+            }
+            
+            input,select {
+            padding: 10px 15px;
+            }
+
+            .btn {
+                background-color: rgba(0, 0, 0, .95);
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                font-size: 18px;
+                border-radius: 100px;
+                -webkit-border-radius: 100px;
+                -moz-border-radius: 100px;
+                -ms-border-radius: 100px;
+                -o-border-radius: 100px;
+                box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+                cursor: pointer;
+                transition: all .3s;
+                -webkit-transition: all .3s;
+                -moz-transition: all .3s;
+                -ms-transition: all .3s;
+                -o-transition: all .3s;
+                }
+                
+                .btn:hover {
+                transform: scale(1.03);
+                -webkit-transform: scale(1.03);
+                -moz-transform: scale(1.03);
+                -ms-transform: scale(1.03);
+                -o-transform: scale(1.03);
+                box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+                }
+
+        
+/*-------------------------- APPOINTMENT END-------------------------*/
+
+
+
+/*------------------------------ Footer Start----------------------*/
+
+.footer-container{
+    transform: translateY(50%);
+    max-width: 1170px;
+    
+    margin: auto;
+}
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    ul{
+        list-style: none;
+    }
+             
+    .footer{
+        background-color:#424C59;
+        padding: 70px 0;
+        height: 30vh;
+        width: 100%;
+    }
+
+    .footer-col{
+        transform: translate(50%, -30%);
+        z-index: 99;
+        width: 25%;
+        padding: 0 15px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .footer-col img{
+        transform: translateY(50px);
+        width: 160px;
+    }
+        .footer-col h3{
+            margin-top: 5%;
+            height: 60px;
+            font-size: 20px;
+        }
+        .footer-col h3{
+            transform: translateY(40px);
+            height: 60px;
+            font-size: 16px;
+            text-align: center;
+            margin-left:-70px;
+            text-transform: uppercase;
+            margin-right: 100px;
+            color:#d98b84;
+            }
+        .footer-col h4{
+            font-size: 30px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            font-weight: 900;
+            position: relative;
+        }
+        
+        .footer-col h4::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #Dca984;
+            height: 2px;
+            box-sizing: border-box;
+            width: 100px;
+        }
+
+            .footer-col ul li{
+                color: #d98b84;
+            }
+        .footer-col ul li:not(:last-child){
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a{
+            font-size: 17px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            color: #d98b84;
+            display: block;
+            transition: all 0.5s ease;
+        }
+        
+            .footer-col ul li a:hover{
+                color: #fac09e;
+                padding-left: 10px;
+            }
+
+        .footer-col .social-media a{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255,255,255,0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        .footer-col .social-media a:hover{
+            color: rgb(68, 65, 63);
+            background-color: #ffffff;
+        }
+
+        /*------------ FOOTER MOBILE--------------------*/

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TAPS ESPORTS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+       
+       <!-- <script src="https://kit.fontawesome.com/b74c5d782e.js" crossorigin="anonymous"></script> -->
+
+    </head>
+    <body>
+        
+        <!--<div id="lefthalf"></div>
+        <div id="righthalf"></div>-->
+
+
+            <!-- This is the top section of the page -->
+        <section class="home">
+            <div class="container">
+            
+                <!-- Menubar -->
+
+                    <div class="menu-wrapper">
+                        <header>
+                            <nav>
+                                <div class="logo">
+                                    <a href="index.html"><img src="images/logoo1.png" width = 110px></a>
+                                </div>
+                                <div class="menubar">
+                                    <ul>
+                                        <li><a href="about.html" class="underline">ABOUT</a></li>
+                                        <li><a href="nails.html" class="underline">NAILS</a></li>
+                                        <li><a href="hair.html" class="underline">HAIR</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </header>
+                    </div>
+
+                    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+                        <script>
+                            $(window).scroll(function(){
+                                if($(window).scrollTop()){
+                                    $("nav").addClass("overlay");
+                                }
+                                else{
+                                    $("nav").removeClass("overlay");
+                                }
+                                    
+                            });
+                        </script>
+
+
+                <!-- Menubar -->
+                </div>
+
+                <div class="topparttext">
+                    <h1>COME IN LOOKING GOOD <br> COME OUT LOOKING BETTER</h1>
+                </div>
+
+                
+             
+               
+    
+        </section>
+
+        
+
+    </body>
+
+
+    <!-- This is the second section with the three pictures  -->
+
+
+    <body>
+        <section class="offer">
+            <h1>WE ARE</h1>
+            <div class="row">
+    
+                <div class="offering">
+                    <img class="offer-img" src="images/hex1resized.jpeg" style="border-radius: 20px;">
+                    <div class="layer-overlay">
+                        <div class="layer-title">Adaptable</div>
+                            <p class="layer-description">We are willing to listen to our customers and adapt to their needs.</p>
+                    </div>
+                </div>
+    
+                <div class="offering">
+                    <img class="offer-img" src="images/hex2resized.jpeg" style="border-radius: 20px;">
+                    <div class="layer-overlay">
+                        <div class="layer-title">Amiable</div>
+                            <p class="layer-description">Here at TAPS, we believe that customers should be more than just customers.</p>
+                    </div>
+                </div>
+    
+                <div class="offering">
+                    <img class="offer-img" src="images/hex3resized.jpeg" style="border-radius: 20px;">
+                    <div class="layer-overlay">
+                        <div class="layer-title">Affordable</div>
+                            <p class="layer-description">Not paying more than you have to in exchange for high quality.</p>
+                    </div>
+                </div>
+    
+    
+               <!-- <div class="offering">
+                    <img src="images/hex2resized.jpeg" style="border-radius: 20px;">
+                    <div class="layer">
+                        <h2>Amiable</h2>
+                            <<p class="offerdescription">
+                                Customers should be more than just customers.
+                            </p>
+                    </div>
+                </div>
+             
+                <div class="offering">
+                    <img src="images/hex3resized.jpeg" style="border-radius: 20px;">
+                    <div class="layer">
+                        <h2>Affordable</h2>
+                            
+                    </div>
+                </div>-->
+    
+            </div>
+                
+                
+        </section>
+
+    
+    </body> 
+
+     <!-- This is the Philly's Favorite Section -->
+
+    <body>
+        <section class="philly">
+            <div class="phillytext">
+                <h1>Philadelphia's </h1>
+                <h2>Favorite</h2>
+                    <p>See what other customers have to say about out business</p>
+            </div>
+        </section>
+    </body>
+
+
+    <!-- This is the testimonials -->
+    
+    <body>
+        <section class="testimonials">
+            <div class="tessie"> <!-- CONTAINER -->
+                <div class = "view-box">
+                    <div id="testarossa">
+
+                        <div class="user">
+                            <img src="images/testimonial1resized.jpeg" alt="">
+                            <p> This is 100% the best nail salon I've been to. Their staff is really friendly even when I asked for a custom design. They managed to do it perfectly and the nail is still there after a few weeks. Great service! </p>
+                            <h3>Alice Harrison</h3>
+                        </div>
+
+                        <div class="user space">
+                            <img src="images/testimonial2resized.jpg" alt="">
+                            <p> I really love how they do their pedicures, especially Tina! The way she massages made me feel really relaxed. One of the best places to go if you want to relax and get your nails painted at the same time.</p>
+                            <h3>Ariana Lewis</h3>
+                        </div>
+
+                        <div class="user">
+                            <img src="images/testimonial3resized.jpeg" alt="">
+                            <p> Looking at the outside I felt kind of intimidated with how everything is so fancy and modern. My son had to convince me to go inside. When I finally got inside however, I felt so welcomed.</p>
+                            <h3>Rebecca Kane</h3>
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="controls">
+                        <span id="control1"></span>
+                        <span id="control2" class="active"></span>
+                        <span id="control3"></span>
+                    </div>
+
+                </div>
+            </div>
+
+            <script>
+
+                var testarossa = document.getElementById('testarossa');
+                var control1 = document.getElementById('control1');
+                var control2 = document.getElementById('control2');
+                var control3 = document.getElementById('control3');
+
+
+                    control1.onclick=function(){
+                        testarossa.style.transform = "translateX(870px)";
+                        control1.classList.add("active");
+                        control2.classList.remove("active");
+                        control3.classList.remove("active");
+                    }
+
+                    control2.onclick=function(){
+                        testarossa.style.transform = "translateX(0px)";
+                        control1.classList.remove("active");
+                        control2.classList.add("active");
+                        control3.classList.remove("active");
+                    }
+                    
+                    control3.onclick=function(){
+                        testarossa.style.transform = "translateX(-870px)";
+                        control1.classList.remove("active");
+                        control2.classList.remove("active");
+                        control3.classList.add("active");
+                    }
+            </script>
+
+        </section>
+    </body>
+
+    <!-- -------------------------------------------------------------- APPOINTMENT START------------------------------------------------ -->
+<body class="appointment-body">
+    <section id="appointment">
+    <div class="form-container">
+        <div class="container-time">
+            <h2 class="heading">Time Open</h2>
+            <h3 class="heading-days">Monday-Friday</h3>
+                <p>9:00am - 6:00pm</p>
+          
+            <h3 class="heading-days">Saturday</h3>
+                <p>10:00am - 7:00pm</p>
+
+            <h3 class="heading-days">Sunday</h3>
+                <p>Closed</p>
+            
+            <hr>
+            
+            <h4 class="heading-phone">Call Us: 215-474-4407</h4>
+            </div>
+            
+            <div class="container-form">
+            <form action="#">
+            <h2 class="heading heading-yellow">Reservation Online</h2>
+            
+            <div class="form-field">
+                <p>Name</p>
+                <input type="text" placeholder="Your Name">
+            </div>
+            <div class="form-field">
+                <p>Number</p>
+                <input type="tel" placeholder="Your Phone Number">
+            </div>
+            <div class="form-field">
+                <p>Date</p>
+                <input type="date">
+            </div>
+            <div class="form-field">
+                <p>Time</p>
+                <input type="time">
+            </div>
+            <div class="form-field">
+                <p>How many people?</p>
+              <select name="select" id="#">
+              <option value="1">1 person</option>
+              <option value="2">2 people</option>
+              <option value="3">3 people</option>
+              <option value="4">4 people</option>
+              <option value="5">5 people</option>
+              <option value="5+">5+ people</option>
+            </select>
+            </div>
+            
+            <button class="btn">Submit</button>
+            </form>
+            </div>
+        </div>
+    </section>
+</body>
+    <!-- ------------------------------------------------------------ APPOINTMENT END------------------------------------------------ -->
+   
+    <!-- ------------------------------------ BOTTOM OF PAGE WOOOOOOOOOO ---------------------- -->
+    <body>
+        <footer class = "footer">
+            <div class= "footer-container"> 
+                <div class="row">
+
+                    <div class="footer-col">        <!-- LoganSlogan -->
+                        <img src="images/logoo1.png">
+                        <ul>
+                            <h3>We make you look <br> your best</h3>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">        <!-- Contact Info -->
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li style = "transform: translateX(-40px);"><a href="https://www.google.com/maps/place/5212+Walnut+St,+Philadelphia,+PA+19139/@39.9568366,-75.22823,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6c6c2c82906af:0xb26f2cd40bea7914!8m2!3d39.9568325!4d-75.2260413">5212 Walnut Street</a></li>
+                            <li style = "transform: translateX(-40px);">215-474-4407</li>
+                            <li style = "transform: translateX(-40px);">luckynailstwo@gmail.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">        <!-- Social Media -->
+                        <h4>Follow Us</h4>
+                        <div class="social-media">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-yelp"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+               
+            </div>
+                
+
+
+
+        </footer>       
+    </body>
+    
+
+    
+</html>
+
+
+

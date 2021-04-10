@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+    /*background-color: aqua;*/
+    box-sizing: border-box;
+    width: 100%;
+}
+   
+    .container {
+        position: relative;
+        text-align: center;
+    }
+
+    /*------------------------------Menubar START-------------------------*/
+        header{
+            width: 100%;
+            height: 100vh;
+            background: url(images/groundy.png) no-repeat 50% 50%;
+            background-size: cover;
+            background-attachment: fixed;
+            
+        }
+
+        .logo{
+            position: fixed;
+            float: left;
+            margin: 8px 36px;
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            height: 110px;
+        }
+        
+        nav{
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            
+        }
+            nav ul{
+                list-style: none;
+                background: rgba (0,0,0,0);
+                overflow: hidden;
+                color: white;
+                padding: 0;
+                text-align: right;
+                margin: 0;
+                transition: 1s;
+    
+                
+            }
+                nav.overlay ul{
+                    background: #424C59;
+                }
+
+                nav ul li{
+                    display: inline-block;
+                    margin: 0 50px; 
+                    padding: 20px;
+                    
+                }
+
+                    nav ul li a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 20px;
+                        letter-spacing: 2px;
+                    }
+
+                    /*-----------------------------------------Underline Hover START----------------*/
+
+                        
+                        .underline::after{
+                            content: '';
+                            display: block;
+                            height: 3px;
+                            width: 0px;
+                            background:white;
+                            transition: width 0.5s;
+                        }
+
+                        .underline:hover::after{
+                            width: 100%;
+                            transition: width 0.5s;  
+                        }
+
+                       
+
+
+                    /*-----------------------------------------Underline Hover END----------------*/
+
+
+    /*------------------------------Menubar END-------------------------*/
+    
+
+        /*#lefthalf {                                                   Two images
+            background: url(images/groundyleft.png);
+            width: 50%;
+            position: absolute;
+            left: 0px;
+            height: 100%;
+        }
+
+        #righthalf {
+            background: url(images/groundyright.png);
+            width: 50%;
+            position: absolute;
+            right: 0px;
+            height: 100%;
+        } */
+
+
+        .topparttext{
+            width: 100% ;
+            color:white;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, 30%);
+            text-align: center;
+
+        }
+
+            .topparttext h1{
+                font-size: 80px;
+            }
+
+
+    /*------------------------------------------ Three Boxes START-------------------------------*/
+    .offer{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+        transform: translateY(5%);
+    }
+
+        .offer h1{
+            font-size: 80px;
+            transform: translateY(-50%);
+            color:#424C59;
+            letter-spacing: 3px;
+        }
+
+    .row{
+        display: flex;
+        
+    }
+        .offering{
+            flex: 33.33%;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+
+            .offering img{
+                width: 80%;
+         
+            }
+
+                .layer-overlay{
+                    position: absolute;
+                    top: 0;
+                    left: 10%;
+                    width: 80%;
+                    border-radius: 20px;
+                    height: 99.1%;
+                    background: rgba(0,0,0,0.7);
+                    color:white;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    opacity: 0;
+                    transition: opacity 0.5s;
+                }
+    
+                    .layer-overlay > * {
+                        transform: translateY(450px);
+                        transition: 0.5s;
+                    }
+                    .layer-overlay:hover {
+                        opacity: 1;
+                    }
+                    .layer-overlay:hover > *{
+                        transform: translateY(0px);
+                       }
+                       
+
+                    .layer-title {
+                        font-size: 2.5em;
+                        font-weight: bold;
+                        margin-top: 40%;
+                    }
+    
+                           .layer-description {
+                            font-size: 1.5em;
+                            margin-top: 1em;
+                            margin-left: 10%;
+                            max-width: 80%;
+                            font-family: 'Open Sans', sans-serif;
+
+                            }
+
+
+    /*------------------------------------------ Three Boxes END-------------------------------*/
+
+    /*--------------------Philadelphia's Favorite START-----------------------------*/
+
+        .philly{
+            min-height: 100vh;
+            width: 100%;
+            background-image: url(images/philadelphia1.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            transform: translateY(32%);
+        }
+            .phillytext h1{
+                position: absolute;
+                font-size: 90px;
+                color: white;
+                text-transform: uppercase;
+                text-align: left;
+                margin-top: 16%;
+                margin-left: 12%;
+            }
+
+            .phillytext h2{
+                position: absolute;
+                font-size: 69px;
+                color: white;
+                text-transform: uppercase;
+                text-align: left;
+                margin-top: 22%;
+                margin-left: 12%;
+            }
+                .phillytext p{
+                    position: absolute;
+                    font-size: 30px;
+                    color: white;
+                    text-align: left;
+                    margin-top: 28%;
+                    margin-left: 12%;
+                }
+
+    /*--------------------Philadelphia's Favorite END-----------------------------*/
+
+    /*------------------------------ Testimonials START----------------------*/
+        .tessie{
+            width: 100%;
+            height: 100vh;
+            background :#f5f6f8;
+            position: relative;
+            transform: translateY(30%);
+        }
+        .view-box{
+            width: 900px;
+            height: 530px;
+            border-radius: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            /*background: #424C59;*/
+        }
+
+        #testarossa{
+            display: flex;
+            transition: 0.5s;
+
+        }
+
+            .user{
+                width: 800px;
+                text-align: center;
+                padding: 20px 70px;
+                box-sizing: border-box;
+                background: #303438;
+                border-radius: 200px;
+                box-shadow: 0 10px 20px -5px #00000061;
+                position: relative;
+            }
+
+            .space{
+                margin: 0 70px;
+            }
+
+            .user img{
+                width: 120px;
+                border-radius: 50%;
+                border: 10px solid #e8ecff;
+                position: absolute;
+                top: -80px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .user p{
+                font-size: 20px;
+                color: #cecece;
+                line-height: 32px;
+                margin: 60px 0 30px;
+                font-family: 'Open Sans', sans-serif;
+            
+            }
+            
+            .user p::before{
+                content: '\201C';
+                font-size: 40px;
+                height: 0;
+                display: inline-block;
+                vertical-align: -57;
+                margin-right: 10px;
+            }
+                
+            .user p::after{
+                content: '\201D';     
+                font-size: 40px;
+                height: 0;
+                display: inline-block;
+                vertical-align: -70;
+                margin-left: 10px;
+            }
+
+            .user h3{
+                font-size: 30px;
+                color: #d98b84;
+            }
+      
+        .controls{
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+            .controls span{
+                width: 15px;
+                height: 15px;
+                background: #afafaf;
+                border-radius: 15px;
+                margin: 0 5px;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+
+            .active{
+                width: 45px !important;
+            }
+            
+
+    /*------------------------------ Testimonials END----------------------*/
+
+/*-------------------------- APPOINTMENT START-------------------------*/
+.appointment-body {
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+    }
+
+    #appointment{
+        margin-top: 25%;
+    }
+    .form-container{
+        background-color: #fafafa;
+        margin: 200px;
+        box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+
+    .container-time {
+        background-color: rgba(0, 0, 0, .95);
+        padding: 50px;
+        outline: 3px dashed #d98b84;
+        outline-offset: -30px;
+        text-align: center;
+        }
+        
+        .heading {
+            font-size: 35px;
+            text-transform: uppercase;
+            }
+            
+            .heading-days {
+            color:#d98b84;
+            font-size: 30px;
+            
+            }
+            
+            .heading-phone {
+            font-size: 20px;
+            }
+
+        .container-form {
+            padding: 20px 0;
+            margin: 0 auto;
+            color: #000;
+            }
+
+        form {
+            display: grid;
+            grid-row-gap: 20px;
+            }
+            form p {
+            font-weight: 600;
+            }
+            .form-field {
+            display: flex;
+            justify-content: space-between;
+            }
+            
+            input,select {
+            padding: 10px 15px;
+            }
+
+            .btn {
+                background-color: rgba(0, 0, 0, .95);
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                font-size: 18px;
+                border-radius: 100px;
+                -webkit-border-radius: 100px;
+                -moz-border-radius: 100px;
+                -ms-border-radius: 100px;
+                -o-border-radius: 100px;
+                box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+                cursor: pointer;
+                transition: all .3s;
+                -webkit-transition: all .3s;
+                -moz-transition: all .3s;
+                -ms-transition: all .3s;
+                -o-transition: all .3s;
+                }
+                
+                .btn:hover {
+                transform: scale(1.03);
+                -webkit-transform: scale(1.03);
+                -moz-transform: scale(1.03);
+                -ms-transform: scale(1.03);
+                -o-transform: scale(1.03);
+                box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+                }
+
+        
+/*-------------------------- APPOINTMENT END-------------------------*/
+
+
+    /*------------------------------ Footer Start----------------------*/
+
+    .footer-container{
+        transform: translateY(50%);
+        max-width: 1170px;
+        
+        margin: auto;
+    }
+    
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        ul{
+            list-style: none;
+        }
+                 
+        .footer{
+            background-color:#424C59;
+            padding: 70px 0;
+            height: 30vh;
+            width: 100%;
+        }
+    
+        .footer-col{
+            transform: translate(50%, -30%);
+            z-index: 99;
+            width: 25%;
+            padding: 0 15px;
+            font-family: 'Open Sans', sans-serif;
+        }
+    
+        .footer-col img{
+            transform: translateY(50px);
+            width: 160px;
+        }
+            .footer-col h3{
+                margin-top: 5%;
+                height: 60px;
+                font-size: 20px;
+            }
+            .footer-col h3{
+                transform: translateY(40px);
+                height: 60px;
+                font-size: 16px;
+                text-align: center;
+                margin-left:-70px;
+                text-transform: uppercase;
+                margin-right: 100px;
+                color:#d98b84;
+                }
+            .footer-col h4{
+                font-size: 30px;
+                color: #ffffff;
+                text-transform: capitalize;
+                margin-bottom: 30px;
+                font-weight: 900;
+                position: relative;
+            }
+            
+            .footer-col h4::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                background-color: #Dca984;
+                height: 2px;
+                box-sizing: border-box;
+                width: 100px;
+            }
+    
+                .footer-col ul li{
+                    color: #d98b84;
+                }
+            .footer-col ul li:not(:last-child){
+                margin-bottom: 10px;
+            }
+    
+            .footer-col ul li a{
+                font-size: 17px;
+                text-transform: capitalize;
+                color: #ffffff;
+                text-decoration: none;
+                color: #d98b84;
+                display: block;
+                transition: all 0.5s ease;
+            }
+            
+                .footer-col ul li a:hover{
+                    color: #fac09e;
+                    padding-left: 10px;
+                }
+    
+            .footer-col .social-media a{
+                display: inline-block;
+                height: 40px;
+                width: 40px;
+                background-color: rgba(255,255,255,0.2);
+                margin: 0 10px 10px 0;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 50%;
+                color: #ffffff;
+                transition: all 0.5s ease;
+            }
+    
+            .footer-col .social-media a:hover{
+                color: rgb(68, 65, 63);
+                background-color: #ffffff;
+            }
+
+        /*------------ FOOTER MOBILE--------------------*/
+
+          
+
+        /*------------ FOOTER MOBILE--------------------*/
+
+       
+            
+        
+            
+    /*------------------------------ Footer END----------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
